@@ -14,11 +14,20 @@ alert("hola" +nombre)
 saludar("obduber")}
 let nombre:string = prompt ("Escribe tu nombre")
 */
-function sumar(f, n2) {
-    return f;
+/* function sumar(f:number,n2:number):number{
+    return f
 }
-sumar(9, 200);
-console.log(sumar);
+sumar(9,200)
+console.log(sumar)
+ */
 function promedia(n1, n2, n3, solo_sumar) {
-    var suma = ;
+    var suma = n1 + n2 + n3;
+    if (solo_sumar) {
+        return suma;
+    }
+    else {
+        return suma / 3;
+    }
 }
+promedia(10, 20, 30);
+console.log(promedia);
