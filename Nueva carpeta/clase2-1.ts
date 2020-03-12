@@ -19,11 +19,18 @@ class Pelota{
     posicion_y:number
     tamano:number
     color:string
+    direcion_x:number
+    direcion_y:number
 
     dibujar(){
         contexto.fillStyle = this.color
         contexto.fillRect(this.posicion_x, this.posicion_y, this.tamano, this.tamano)
         console.log(this.color)
+    }
+    actualizar(){
+        this.posicion_x += this.direcion_x
+        this.posicion_y += this.direcion_y
+        console.log()
     }
 }
 
@@ -39,9 +46,21 @@ r.color = "red"
 r.posicion_x = 10
 r.posicion_y = 10
 r.tamano = 130
+r.direcion_x = 10
+r.direcion_y = 10
 
 r.dibujar()
 
+contexto.fillRect(0,0,300,300)
+contexto.clearRect(10,10,200,200)
+
+setInterval(()=>{
+    console.log("Repetir")
+    contexto.clearRect(0,0,canvas.width,canvas.height)
+    r.dibujar()
+    r.actualizar()
+    
+},1000/24)
 
 /* let r2:Pelota = new Pelota()
 
