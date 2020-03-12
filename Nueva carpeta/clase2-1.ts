@@ -45,7 +45,7 @@ let r:Pelota = new Pelota()
 r.color = "red"
 r.posicion_x = 10
 r.posicion_y = 10
-r.tamano = 130
+r.tamano = 13
 r.direcion_x = 10
 r.direcion_y = 10
 
@@ -60,7 +60,7 @@ setInterval(()=>{
     r.dibujar()
     r.actualizar()
     
-},1000/24)
+},1000/100000000004)
 
 /* let r2:Pelota = new Pelota()
 
