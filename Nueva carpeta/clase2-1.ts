@@ -54,7 +54,7 @@ let r:Pelota = new Pelota()
 r.color = "red"
 r.posicion_x = 10
 r.posicion_y = 10
-r.tamano = 5
+r.tamano = 20
 r.direcion_x = 10
 r.direcion_y = 10
 
