@@ -29,10 +29,10 @@ class Pelota{
     }
     actualizar(){
         
-        if(this.posicion_x > ancho){
+        if(this.posicion_x > (ancho - this.tamano) || this.posicion_x <= 0){
             this.direcion_x = -this.direcion_x
         }
-        if(this.posicion_y > ancho){
+        if(this.posicion_y > (alto - this.tamano) || this.posicion_y <= 0){
             this.direcion_y = -this.direcion_y
         }
         this.posicion_x += this.direcion_x
